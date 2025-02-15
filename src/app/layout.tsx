@@ -23,7 +23,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased`}
             >
-                <div className="absolute inset-0 overflow-hidden">
+                <div className="absolute inset-0 overflow-hidden bg-gradient-to-r from-blue-900 via-teal-900 to-green-900">
                     {children}
                 </div>
             </body>
