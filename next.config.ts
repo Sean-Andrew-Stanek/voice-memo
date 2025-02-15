@@ -1,8 +1,12 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
+    output: 'export',
+    images: {
+        unoptimized: true
+    },
     reactStrictMode: true,
-    transpilePackages: ['react-speech-recognition'] // Ensure transpiling of external libraries if needed
+    basePath: '/tts'
 };
 
 export default nextConfig;
